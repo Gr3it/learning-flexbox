@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+:root {
+  --MainColor: #ff9671;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.flexbox-container {
+  margin: 5rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.flexbox-title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--MainColor);
+}
+
+.exercise-container {
+  width: 100%;
+  min-height: 30rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-column {
+  height: 100%;
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-bottom: 2rem;
+}
+
+.display-container {
+  flex-basis: 0;
+  flex-grow: 3;
+  background-color: var(--MainColor);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 30rem;
+}
+
+.exercise-title {
+  display: flex;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff9671;
+  flex-direction: column;
+}
+
+.exercise-title > p {
+  font-size: 2rem;
+}
+
+.exercise-buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.exercise-button {
+  display: inline-block;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  background-color: var(--MainColor);
+  color: white;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.flex-direction > * {
+  flex-grow: 1;
+}
+
+.flex-element {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.flex-element:nth-child(1) {
+  background-color: #99b9e2;
+}
+.flex-element:nth-child(2) {
+  background-color: #dcb8e0;
+}
+.flex-element:nth-child(3) {
+  background-color: #fabcd4;
+}
+
+.exercise-button:hover:not(.active) {
+  transform: translate(1.5rem);
+  color: var(--MainColor);
+  font-weight: bold;
+  background-color: #ff967120;
+}
+
+.active {
+  transform: translate(1.5rem);
+  color: var(--MainColor);
+  background-color: transparent;
+  font-weight: bold;
+  background-color: #ff967120;
+}
+
+.flex-alignment > * {
+  height: 12rem;
+  width: 12rem;
+}
+
+.flex-wrap > * {
+  width: 40%;
+}
+
+.flex-shrink > * {
+  width: 40%;
+}
+
+.flex-shrink > *:first-child {
+  width: 90%;
+}
+
+.flex-grow > * {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.flex-alignself {
+  justify-content: space-around;
+}
+
+.flex-alignself > * {
+  height: 12rem;
+  width: 12rem;
+  align-self: center;
+}
+
+.direction-row {
+  flex-direction: row;
+}
+.direction-row-reverse {
+  flex-direction: row-reverse;
+}
+.direction-column {
+  flex-direction: column;
+}
+.direction-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-flex-end {
+  justify-content: flex-end;
+}
+.justify-flex-start {
+  justify-content: flex-start;
+}
+.justify-space-around {
+  justify-content: space-around;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+.align-center {
+  align-items: center;
+}
+.align-flex-end {
+  align-items: flex-end;
+}
+.align-flex-start {
+  align-items: flex-start;
+}
+
+.m-left-2 > *:nth-child(2) {
+  margin-left: auto;
+}
+.m-left-3 > *:nth-child(3) {
+  margin-left: auto;
+}
+.m-left-2-3 > *:nth-child(2) {
+  margin-left: auto;
+}
+.m-left-2-3 > *:nth-child(3) {
+  margin-left: auto;
+}
+
+.no-wrap {
+  flex-wrap: nowrap;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.shrink-0 > *:first-child {
+  flex-shrink: 0;
+}
+.shrink-1 > *:first-child {
+  flex-shrink: 1;
+}
+.shrink-2 > *:first-child {
+  flex-shrink: 2;
+}
+.grow-0 > *:first-child {
+  flex-grow: 0;
+}
+.grow-1 > *:first-child {
+  flex-grow: 1;
+}
+.grow-2 > *:first-child {
+  flex-grow: 2;
+}
+.grow-3 > *:first-child {
+  flex-grow: 3;
+}
+
+.gap-0rem {
+  gap: 0rem;
+}
+.gap-1rem {
+  gap: 1rem;
+}
+.gap-2rem {
+  gap: 2rem;
+}
+.gap-3rem {
+  gap: 3rem;
+}
+.gap-4rem {
+  gap: 4rem;
+}
+
+.align-self-center > *:first-child {
+  align-self: center;
+}
+.align-self-flex-end > *:first-child {
+  align-self: flex-end;
+}
+.align-self-flex-start > *:first-child {
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 1600px) {
+  .exercise-container {
+    flex-direction: column;
+  }
+}
